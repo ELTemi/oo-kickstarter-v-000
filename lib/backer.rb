@@ -1,3 +1,4 @@
+require "pry"
 class Backer
   attr_accessor :name, :backed_projects
 
@@ -5,6 +6,7 @@ class Backer
     @name = name
     @backed_projects = []
     @backed_projects
+    binding.pry
   end
 
   def back_project(project)
